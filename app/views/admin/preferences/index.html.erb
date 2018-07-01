@@ -1,22 +1,22 @@
 <h1>Admin: Preferences</h1>
 <%= form_for @preference, url: admin_preference_path(@preference) do |f| %>
 
-    <%= f.label :allow_create_artists %><br>
+    <%= f.label :allow_create_artists %>
     True: <%= f.radio_button :allow_create_artists, true %>
     False: <%= f.radio_button :allow_create_artists, false %>
 <br><br>
 
-    <%= f.label :allow_create_songs %><br>
+    <%= f.label :allow_create_songs %>
     True: <%= f.radio_button :allow_create_songs, true %>
     False: <%= f.radio_button :allow_create_songs, false %>
 <br><br>
 
-    <%= f.label :song_sort_order %>:<br>
+    <%= f.label :song_sort_order %>
     DESC: <%= f.radio_button :song_sort_order, "DESC" %>
     ASC: <%= f.radio_button :song_sort_order, "ASC" %>
   <br><br>
 
-    <%= f.label :artist_sort_order %>:<br>
+    <%= f.label :artist_sort_order %>
     DESC: <%= f.radio_button :artist_sort_order, "DESC" %>
     ASC: <%= f.radio_button :artist_sort_order, "ASC" %>
 <br><br>
