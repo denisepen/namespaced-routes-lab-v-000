@@ -1,5 +1,8 @@
 <h1>Admin: Preferences</h1>
-<%= form_for @preference, url: admin_preference_path(@preference) do |f| %>
+<%= form_for @preference, url: admin_preferences_path(@preference) do |f| %>
+<%# https://stackoverflow.com/questions/24375454/whats-the-meaning-of-url-path-in-form-for %>
+<%# to snswer why we need a url in the form_for field %>
+<%# bc we have to tell the form to post to the update action/path %>
 
     <%= f.label :allow_create_artists %>
     True: <%= f.radio_button :allow_create_artists, true %>
